@@ -1,0 +1,21 @@
+body,
+html {
+    height: 100%;
+    display: grid;
+    background-color: #708090;
+    color: rgb(210, 222, 234);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 28px;
+}
+
+main {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 5;
+    grid-template-rows: 2;
+    border: 2px black ;
+}
