@@ -30,3 +30,12 @@ main {
     transition-duration: 0.15s;
     transition-timing-function: ease-in-out;
 }
+
+.game-icon {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
