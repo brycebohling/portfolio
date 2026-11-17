@@ -1,170 +1,416 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Bryce Bohling — Portfolio</title>
+        <meta name="description" content="Portfolio of Bryce Bohling: games, projects, and what I learned building them." />
+        <meta name="author" content="Bryce Bohling" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bryce Bohling — Games & Experiments</title>
-  <meta name="description" content="Games, experiments, and builds by Bryce Bohling.">
-  <meta name="author" content="Bryce Bohling">
+        <meta property="og:title" content="Bryce Bohling — Portfolio" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://brycebohling.com/" />
+        <meta property="og:description" content="Portfolio of Bryce Bohling: games, projects, and what I learned building them." />
 
-  <meta property="og:title" content="Bryce Bohling — Games & Experiments">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://brycebohling.com/">
-  <meta property="og:description" content="Games, experiments, and builds by Bryce Bohling.">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css" />
+    </head>
 
-  <link rel="stylesheet" href="index.css">
-</head>
+    <body>
+        <header class="hero">
+            <h1>Bryce <span class="accent">Bohling</span></h1>
+            <p class="tagline">game developer · student · business owner</p>
+            <nav class="links" aria-label="Contact links">
+                <a class="btn btn-download" href="mailto:bryce@bohling.me">Email</a>
+                <a class="btn btn-download" href="https://www.linkedin.com/in/bryce-bohling-dev" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="btn btn-download" href="https://github.com/brycebohling" target="_blank" rel="noopener">GitHub</a>
+            </nav>
+        </header>
 
-<body>
-  <header class="hero">
-    <h1>Bryce <span class="accent">Bohling</span></h1>
-    <p class="tagline">games · experiments · builds</p>
-  </header>
+        <main>
+            <section class="section" aria-labelledby="about-heading">
+                <h2 id="about-heading">About</h2>
+                <div class="about">
+                    <p class="lead">I'm a college student who builds <strong>games and software</strong>.</p>
+                    <div class="facts">
+                        <div class="fact">
+                            <p class="label">School</p>
+                            <p class="fact-main">Oregon State University</p>
+                            <p class="fact-sub">2025 – expected 2028</p>
+                        </div>
+                        <div class="fact">
+                            <p class="label">Skills</p>
+                            <div class="skill-group">
+                                <span class="skill-label">Languages</span>
+                                <ul class="chips">
+                                    <li>C#</li>
+                                    <li>Python</li>
+                                    <li>JavaScript</li>
+                                    <li>SQL</li>
+                                    <li>HTML/CSS</li>
+                                </ul>
+                            </div>
+                            <div class="skill-group">
+                                <span class="skill-label">Tools</span>
+                                <ul class="chips">
+                                    <li>Unity 6</li>
+                                    <li>Git/GitHub</li>
+                                    <li>VS Code</li>
+                                    <li>REST APIs</li>
+                                    <li>Supabase (PostgreSQL)</li>
+                                </ul>
+                            </div>
+                            <div class="skill-group">
+                                <span class="skill-label">Concepts</span>
+                                <ul class="chips">
+                                    <li>OOP</li>
+                                    <li>Agile/Scrum</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-  <main>
-    <section class="games" aria-labelledby="completed-heading">
-      <h2 id="completed-heading">Completed</h2>
-      <div class="game-grid">
+            <section class="section" aria-labelledby="business-heading">
+                <h2 id="business-heading">Business</h2>
+                <div class="business">
+                    <div>
+                        <p class="label">Founder</p>
+                        <p class="business-name">Maker of Worlds LLC</p>
+                        <p class="business-desc">My independent game development studio.</p>
+                    </div>
+                    <a class="btn btn-play" href="https://makerofworlds.dev" target="_blank" rel="noopener">Visit site →</a>
+                </div>
+            </section>
 
-        <article class="game-card">
-          <a href="https://hs.brycebohling.com" class="card-media" target="_blank" rel="noopener">
-            <img src="Images/H-S Image.png" alt="H-S game thumbnail" loading="lazy">
-          </a>
-          <div class="card-body">
-            <h3>Hack and Slash</h3>
-            <p>A browser game playable right in your tab. Jump in, no install needed.</p>
-            <div class="card-actions">
-              <a class="btn btn-play" href="https://hs.brycebohling.com" target="_blank" rel="noopener">▶ Play</a>
-            </div>
-          </div>
-        </article>
+            <section class="section" aria-labelledby="projects-heading">
+                <h2 id="projects-heading">Projects</h2>
+                <div class="project-list">
+                    <article class="project">
+                        <a href="https://hs.brycebohling.com" class="project-media" target="_blank" rel="noopener">
+                            <img src="Images/H-S Image.png" alt="Hack and Slash thumbnail" loading="lazy" />
+                        </a>
+                        <div class="project-body">
+                            <h3>Hack & Slash</h3>
+                            <p class="project-meta">2023 · Web game</p>
+                            <p class="project-summary">
+                                My first video game. A wave based roguelike playable in the browser with a global leaderboard.
+                            </p>
+                            <div class="card-actions">
+                                <a class="btn btn-play" href="https://hs.brycebohling.com" target="_blank" rel="noopener">▶ Play</a>
+                            </div>
+                        </div>
+                        <details class="project-details">
+                            <summary>Details</summary>
+                            <dl>
+                                <div>
+                                    <dt>Origin</dt>
+                                    <dd>
+                                        Hack & Slash was the first game I created. I started game development because I wanted to learn how to code
+                                        and thought game development would make for a fun medium.
+                                    </dd>
+                                </div>
+                                <div>
+                                    <dt>Takeaways</dt>
+                                    <dd>
+                                        <ul class="takeaways">
+                                            <li>
+                                                <strong>Iterate, don't perfect.</strong> Getting feedback early and often matters more than getting it
+                                                right the first time.
+                                            </li>
+                                            <li>
+                                                <strong>Feelings are real, diagnoses are not.</strong> Players often can't pinpoint what is actually
+                                                wrong, but if something feels off to them, there is a real problem.
+                                            </li>
+                                            <li>
+                                                <strong>Translating feedback is my job.</strong> As the developer, I trace that feeling back to its
+                                                cause and fix it.
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </div>
+                                <div>
+                                    <dt>Learned</dt>
+                                    <dd>Unity, C#, OOP, basic APIs, Game Physics, Aseprite, Animation</dd>
+                                </div>
+                                <div>
+                                    <dt>Used</dt>
+                                    <dd>Unity, C#</dd>
+                                </div>
+                            </dl>
+                        </details>
+                    </article>
 
-        <article class="game-card">
-          <a href="https://mm.brycebohling.com" class="card-media" target="_blank" rel="noopener">
-            <img src="Images/MagnetMayhemImage.png" alt="Magnet Mayhem game thumbnail" loading="lazy">
-          </a>
-          <div class="card-body">
-            <h3>Magnet Mayhem</h3>
-            <p>Push and pull magnets to reach a goal. A high school physics project.</p>
-            <div class="card-actions">
-              <a class="btn btn-play" href="https://mm.brycebohling.com" target="_blank" rel="noopener">▶ Play</a>
-            </div>
-          </div>
-        </article>
+                    <article class="project">
+                        <a href="https://mm.brycebohling.com" class="project-media" target="_blank" rel="noopener">
+                            <img src="Images/MagnetMayhemImage.png" alt="Magnet Mayhem thumbnail" loading="lazy" />
+                        </a>
+                        <div class="project-body">
+                            <h3>Magnet Mayhem</h3>
+                            <p class="project-meta">2024 · Web game · School project</p>
+                            <p class="project-summary">Push and pull magnets to reach a goal. A high school physics project.</p>
+                            <div class="card-actions">
+                                <a class="btn btn-play" href="https://mm.brycebohling.com" target="_blank" rel="noopener">▶ Play</a>
+                            </div>
+                        </div>
+                        <details class="project-details">
+                            <summary>Details</summary>
+                            <dl>
+                                <div>
+                                    <dt>Origin</dt>
+                                    <dd>
+                                        A high school physics class project. The assignment was to present a physics concept and teach the class
+                                        something.
+                                    </dd>
+                                </div>
+                                <div>
+                                    <dt>Takeaways</dt>
+                                    <dd>
+                                        <ul class="takeaways">
+                                            <li>
+                                                <strong>Unity is fast for prototyping.</strong> It can be used to create interactive experiences and
+                                                try out ideas quickly.
+                                            </li>
+                                            <li><strong>Level design is hard.</strong> It is time consuming and more challenging than it looks.</li>
+                                        </ul>
+                                    </dd>
+                                </div>
+                                <div>
+                                    <dt>Learned</dt>
+                                    <dd>Level design, Unity's Particle System, complete a project with a deadline</dd>
+                                </div>
+                                <div>
+                                    <dt>Used</dt>
+                                    <dd>Unity, C#</dd>
+                                </div>
+                            </dl>
+                        </details>
+                    </article>
 
-        <article class="game-card">
-          <div class="card-media card-media--placeholder" role="img" aria-label="Pong placeholder"></div>
-          <div class="card-body">
-            <h3>Pong</h3>
-            <p>The classic, rebuilt as a desktop game. Multiplayer proof of concept.</p>
-            <div class="card-actions">
-              <a class="btn btn-download" href="https://downloads.brycebohling.com/PongV1.0.0.zip" download>⬇ Mac</a>
-              <a class="btn btn-download" href="https://downloads.brycebohling.com/PongWinV1.0.0.zip" download>⬇ Windows</a>
-            </div>
-          </div>
-        </article>
+                    <article class="project">
+                        <a href="https://makerofworlds.dev/" class="project-media project-media--icon" target="_blank" rel="noopener">
+                            <img src="Images/gem-junction-logo.png" alt="Gem Junction logo" loading="lazy" />
+                        </a>
+                        <div class="project-body">
+                            <h3>Gem Junction</h3>
+                            <p class="project-meta">2023-2024 · Mobile game · iOS &amp; Android</p>
+                            <p class="project-summary">A mobile puzzle game on iOS and Android.</p>
+                            <div class="card-actions">
+                                <a class="btn btn-play" href="https://makerofworlds.dev/" target="_blank" rel="noopener">▶ Play</a>
+                            </div>
+                        </div>
+                        <details class="project-details">
+                            <summary>Details</summary>
+                            <dl>
+                                <div>
+                                    <dt>Origin</dt>
+                                    <dd>
+                                        A classmate dared me to make a copy of a popular game at the time, Suika Game (Watermelon Game), on the web.
+                                        Later, I expanded it into a unique, full mobile game.
+                                    </dd>
+                                </div>
+                                <div>
+                                    <dt>Takeaways</dt>
+                                    <dd>
+                                        <ul class="takeaways">
+                                            <li>
+                                                <strong>Shipping takes more than motivation.</strong> A fully localized game with in-app purchases,
+                                                ads, accounts, achievements, and leaderboards requires determination and a lot of time.
+                                            </li>
+                                            <li>
+                                                <strong>App Store review is slow.</strong> The App Store Connect submission process is long and
+                                                tedious. Expect delays and failed submissions.
+                                            </li>
+                                            <li>
+                                                <strong>Mobile is saturated.</strong> It is nearly impossible to get organic downloads without
+                                                marketing or App Store Optimization.
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </div>
+                                <div>
+                                    <dt>Learned</dt>
+                                    <dd>
+                                        ASO, Account management, Development environments, In-App Purchases, Game Center (Achievements, Leaderboards),
+                                        Localization, collaboration with an artist, build validation
+                                    </dd>
+                                </div>
+                                <div>
+                                    <dt>Used</dt>
+                                    <dd>Unity, C#, Unity Gaming Services, Apple Store Connect, Google Play Store, TestFlight</dd>
+                                </div>
+                            </dl>
+                        </details>
+                    </article>
 
-        <article class="game-card">
-          <a href="https://makerofworlds.dev/" class="card-media" target="_blank" rel="noopener">
-            <img src="Images/gem-junction-logo.png" alt="Gem Junction logo" loading="lazy">
-          </a>
-          <div class="card-body">
-            <h3>Gem Junction</h3>
-            <p>A mobile puzzle game on iOS and Android.</p>
-            <div class="card-actions">
-              <a class="btn btn-play" href="https://makerofworlds.dev/" target="_blank" rel="noopener">▶ Play</a>
-            </div>
-          </div>
-        </article>
+                    <article class="project">
+                        <div class="project-media project-media--placeholder" aria-hidden="true"><span>Pong</span></div>
+                        <div class="project-body">
+                            <h3>Pong</h3>
+                            <p class="project-meta">2025 · Desktop game · Multiplayer</p>
+                            <p class="project-summary">The classic, rebuilt as a desktop game. Multiplayer proof of concept.</p>
+                            <div class="card-actions">
+                                <a class="btn btn-download" href="https://downloads.brycebohling.com/PongV1.0.0.zip" download>⬇ Mac</a>
+                                <a class="btn btn-download" href="https://downloads.brycebohling.com/PongWinV1.0.0.zip" download>⬇ Windows</a>
+                            </div>
+                        </div>
+                        <details class="project-details">
+                            <summary>Details</summary>
+                            <dl>
+                                <div>
+                                    <dt>Origin</dt>
+                                    <dd>
+                                        A proof of concept to test Unity's ECS networking. It is powerful and can handle a huge number of objects, and I
+                                        wanted to find out whether I'd want to build a full-scale multiplayer project with it.
+                                    </dd>
+                                </div>
+                                <div>
+                                    <dt>Takeaways</dt>
+                                    <dd>
+                                        <ul class="takeaways">
+                                            <li>
+                                                <strong>Multiplayer exponentially complicates development.</strong> Even a game as simple as Pong gets much harder once every action has to stay in sync between players.
+                                            </li>
+                                            <li>
+                                                <strong>Prototype the tech before committing.</strong> Building something small and familiar let me judge ECS networking itself before betting a full-scale project on it.
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </div>
+                                <div>
+                                    <dt>Learned</dt>
+                                    <dd>Entity Component System (ECS), networking fundamentals</dd>
+                                </div>
+                                <div>
+                                    <dt>Used</dt>
+                                    <dd>Unity, C#</dd>
+                                </div>
+                            </dl>
+                        </details>
+                    </article>
 
-      </div>
-    </section>
+                    <article class="project">
+                        <a href="https://word.makerofworlds.dev" class="project-media project-media--placeholder" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><span>Fleetword</span></a>
+                        <div class="project-body">
+                            <h3>Fleetword</h3>
+                            <p class="project-meta">2026 · Web game</p>
+                            <p class="project-summary">A tool to improve typing, spelling, and vocabulary.</p>
+                            <div class="card-actions">
+                                <a class="btn btn-play" href="https://word.makerofworlds.dev" target="_blank" rel="noopener">▶ Play</a>
+                            </div>
+                        </div>
+                        <details class="project-details">
+                            <summary>Details</summary>
+                            <dl>
+                                <div>
+                                    <dt>Origin</dt>
+                                    <dd>Created to improve my vocabulary, but evolved into a more comprehensive tool.</dd>
+                                </div>
+                                <div>
+                                    <dt>Takeaways</dt>
+                                    <dd>
+                                        <ul class="takeaways">
+                                            <li>
+                                                <strong>I designed, Claude built.</strong> I made the decisions about what to build and why, and used
+                                                Claude as technical support to write the code. That let me try ideas in real time and iterate quickly
+                                                as my needs changed.
+                                            </li>
+                                            <li>
+                                                <strong>Design starts with how people learn.</strong> Most of my effort went into thinking about how
+                                                people actually pick up typing, spelling, and vocabulary, and shaping the features around that.
+                                            </li>
+                                            <li>
+                                                <strong>Learning has to stay fun.</strong> The hardest design problem was balance: enough practice to
+                                                improve, and enough fun to keep coming back.
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </div>
+                                <div>
+                                    <dt>Learned</dt>
+                                    <dd>Claude prompting, Supabase account management, Magic link authentication</dd>
+                                </div>
+                                <div>
+                                    <dt>Used</dt>
+                                    <dd>Claude, Supabase</dd>
+                                </div>
+                            </dl>
+                        </details>
+                    </article>
+                </div>
+            </section>
+        </main>
 
-    <section class="games" aria-labelledby="testing-heading">
-      <h2 id="testing-heading">Testing</h2>
-      <div class="game-grid">
+        <footer>
+            <p>© 2026 Bryce Bohling</p>
+        </footer>
 
-        <article class="game-card">
-          <div class="card-media card-media--placeholder" role="img" aria-label="FPS Demo placeholder"></div>
-          <div class="card-body">
-            <h3>FPS Demo</h3>
-            <p>An early first-person shooter prototype. Rough around the edges — feedback welcome.</p>
-            <div class="card-actions">
-              <a class="btn btn-download" href="https://downloads.brycebohling.com/fps-testing-v0.1.6.zip" download>⬇ Windows</a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2026 Bryce Bohling</p>
-  </footer>
-
-  <!--
+        <!--
     ============================================================
-    HOW TO ADD A NEW GAME
+    HOW TO ADD A NEW PROJECT
     ============================================================
-    Copy one of the templates below into the .game-grid of either
-    the "Completed" or "Testing" <section> above. Drop your image
-    into /Images/. Game builds (zips) are too big for this repo —
-    they get uploaded to the downloads.brycebohling.com bucket
-    (ask Dad), then linked like the examples below.
+    Copy the template below into the .project-list inside the
+    "Projects" <section> above. Drop your image into /Images/.
+    Game builds (zips) are too big for this repo — they get
+    uploaded to the downloads.brycebohling.com bucket (ask Dad),
+    then linked with a download button.
 
-    1) WEB GAME (playable via link):
-    ------------------------------------------------------------
-    <article class="game-card">
-      <a href="https://your-game-url" class="card-media" target="_blank" rel="noopener">
-        <img src="Images/your-image.png" alt="Your Game thumbnail" loading="lazy">
+    Short pitch goes in .project-summary. The long story goes in
+    the <details> block: Origin, Takeaways, Learned, Used. Add, remove, or rename the dt/dd rows
+    however you like.
+
+    <article class="project">
+      <a href="https://your-project-url" class="project-media" target="_blank" rel="noopener">
+        <img src="Images/your-image.png" alt="Your Project thumbnail" loading="lazy">
       </a>
-      <div class="card-body">
-        <h3>Your Game</h3>
-        <p>One-sentence description.</p>
+      <div class="project-body">
+        <h3>Your Project</h3>
+        <p class="project-meta">2026 · Web game · School project</p>
+        <p class="project-summary">One-sentence description.</p>
         <div class="card-actions">
-          <a class="btn btn-play" href="https://your-game-url" target="_blank" rel="noopener">▶ Play</a>
+          <a class="btn btn-play" href="https://your-project-url" target="_blank" rel="noopener">▶ Play</a>
         </div>
       </div>
+      <details class="project-details">
+        <summary>Details</summary>
+        <dl>
+            <div>
+                <dt>Origin</dt>
+                <dd>...</dd>
+            </div>
+            <div>
+                <dt>Takeaways</dt>
+                <dd>
+                    <ul class="takeaways">
+                        <li><strong>Short takeaway.</strong> One sentence explaining it.</li>
+                        <li><strong>Short takeaway.</strong> One sentence explaining it.</li>
+                    </ul>
+                </dd>
+            </div>
+            <div>
+                <dt>Learned</dt>
+                <dd>...</dd>
+            </div>
+            <div>
+                <dt>Used</dt>
+                <dd>...</dd>
+            </div>
+        </dl>
+      </details>
     </article>
 
-    2) DOWNLOADABLE GAME (one or more platform builds):
-    ------------------------------------------------------------
-    <article class="game-card">
-      <div class="card-media">
-        <img src="Images/your-image.png" alt="Your Game thumbnail" loading="lazy">
-      </div>
-      <div class="card-body">
-        <h3>Your Game</h3>
-        <p>One-sentence description.</p>
-        <div class="card-actions">
-          <a class="btn btn-download" href="https://downloads.brycebohling.com/yourgame-mac.zip" download>⬇ Mac</a>
-          <a class="btn btn-download" href="https://downloads.brycebohling.com/yourgame-win.zip" download>⬇ Windows</a>
-        </div>
-      </div>
-    </article>
+    Other action buttons you can put in .card-actions:
+      <a class="btn btn-download" href="https://downloads.brycebohling.com/yourgame-mac.zip" download>⬇ Mac</a>
+      <a class="btn btn-download" href="https://downloads.brycebohling.com/yourgame-win.zip" download>⬇ Windows</a>
+      <span class="pill-coming-soon">Coming Soon</span>
 
-    3) COMING SOON (no link yet):
-    ------------------------------------------------------------
-    <article class="game-card">
-      <div class="card-media">
-        <img src="Images/your-image.png" alt="Your Game thumbnail" loading="lazy">
-      </div>
-      <div class="card-body">
-        <h3>Your Game</h3>
-        <p>One-sentence description.</p>
-        <div class="card-actions">
-          <span class="pill-coming-soon">Coming Soon</span>
-        </div>
-      </div>
-    </article>
+    No image yet? Use this instead of the <a class="project-media">:
+      <div class="project-media project-media--placeholder" aria-hidden="true"><span>Your Project</span></div>
     ============================================================
   -->
-</body>
-
+    </body>
 </html>

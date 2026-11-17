@@ -81,11 +81,18 @@ main {
     padding: 0 1.5rem 4rem;
 }
 
-.games {
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.section {
     margin-top: 3rem;
 }
 
-.games h2 {
+.section h2 {
     font-family: var(--mono);
     font-weight: 600;
     font-size: 0.95rem;
@@ -98,7 +105,7 @@ main {
     position: relative;
 }
 
-.games h2::before {
+.section h2::before {
     content: "";
     position: absolute;
     bottom: -1px;
@@ -108,62 +115,7 @@ main {
     background: var(--accent);
 }
 
-.game-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
-}
-
-.game-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease;
-}
-
-.game-card:hover {
-    transform: translateY(-2px);
-    border-color: var(--accent);
-    box-shadow:
-        0 0 0 1px var(--accent),
-        0 12px 36px -16px rgba(94, 234, 212, 0.45);
-}
-
-.card-media {
-    display: block;
-    aspect-ratio: 16 / 9;
-    overflow: hidden;
-    background: #0a0e12;
-    position: relative;
-}
-
-.card-media--placeholder {
-    background: #1f2a35;
-}
-
-.card-media img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 300ms ease;
-}
-
-.game-card:hover .card-media img {
-    transform: scale(1.04);
-}
-
-.card-body {
-    padding: 1.25rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    flex: 1;
-}
-
-.card-body h3 {
+.section h3 {
     font-family: var(--mono);
     font-weight: 600;
     font-size: 1.05rem;
@@ -172,12 +124,272 @@ main {
     letter-spacing: 0.02em;
 }
 
-.card-body p {
+/* Unfinished placeholder text. Search for "TODO" to find them all. */
+.todo {
+    outline: 1px dashed #f5b84a;
+    outline-offset: 3px;
+    color: #f5b84a !important;
+}
+
+.label,
+dt {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 0.5rem;
+}
+
+dd {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.lead {
+    margin: 0;
+    max-width: 40ch;
+    font-size: clamp(1.35rem, 3vw, 1.75rem);
+    line-height: 1.3;
+    color: var(--muted);
+}
+
+.lead strong {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.facts {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    gap: 1rem;
+    margin-top: 1.75rem;
+}
+
+.fact {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+}
+
+.fact-main {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--text);
+}
+
+.fact-sub {
+    margin: 0.35rem 0 0;
+    font-family: var(--mono);
+    font-size: 0.82rem;
+    color: var(--accent);
+}
+
+.skill-group {
+    display: grid;
+    grid-template-columns: 6.5rem minmax(0, 1fr);
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.skill-group + .skill-group {
+    margin-top: 0.6rem;
+}
+
+.skill-label {
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.chips {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.chips li {
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.business {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem;
+}
+
+.business-name {
+    margin: 0;
+    font-family: var(--mono);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.business-desc {
+    margin: 0.35rem 0 0;
+    color: var(--muted);
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.project {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+    transition: border-color 150ms ease;
+}
+
+.project:hover {
+    border-color: var(--border-strong);
+}
+
+.project-media {
+    display: block;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #0a0e12;
+}
+
+/* No image yet: show the project name on a subtle grid instead of an empty box. */
+.project-media--placeholder {
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    background-color: #131b22;
+    background-image:
+        linear-gradient(var(--border) 1px, transparent 1px),
+        linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: 24px 24px;
+    background-position: center;
+}
+
+.project-media--placeholder span {
+    font-family: var(--mono);
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--accent);
+}
+
+.project-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Square app icons: show the whole icon instead of cropping it to 16:9. */
+.project-media--icon {
+    background: linear-gradient(135deg, #1b4a52, #1d2f5c);
+    padding: 1rem;
+}
+
+.project-media--icon img {
+    object-fit: contain;
+    filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.45));
+}
+
+.project-body {
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.project-meta {
+    margin: 0;
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+}
+
+.project-summary {
     margin: 0;
     color: var(--muted);
-    font-size: 0.92rem;
-    line-height: 1.5;
+    font-size: 0.95rem;
     flex: 1;
+}
+
+.project-details {
+    grid-column: 1 / -1;
+    border-top: 1px solid var(--border);
+}
+
+.project-details summary {
+    cursor: pointer;
+    padding: 0.85rem 1.5rem;
+    font-family: var(--mono);
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    user-select: none;
+}
+
+.project-details summary:hover {
+    background: var(--accent-soft);
+}
+
+.project-details dl {
+    margin: 0;
+    padding: 0.5rem 1.5rem 1.5rem;
+    display: grid;
+    gap: 1.1rem;
+    max-width: 75ch;
+}
+
+.project-details dd {
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Takeaways: one bullet per lesson, bold lead-in then a short explanation. */
+.takeaways {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.6rem;
+}
+
+.takeaways li {
+    padding-left: 1rem;
+    border-left: 2px solid var(--accent);
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+.takeaways strong {
+    display: block;
+    color: var(--text);
+    font-weight: 600;
 }
 
 .card-actions {
@@ -262,24 +474,20 @@ footer p {
         padding: 0 1.25rem 3rem;
     }
 
-    .game-grid {
+    .project,
+    .facts,
+    .skill-group {
         grid-template-columns: 1fr;
-        gap: 1rem;
+    }
+
+    .skill-group {
+        gap: 0.3rem;
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .game-card,
-    .card-media img,
+    .project,
     .btn {
         transition: none;
-    }
-
-    .game-card:hover {
-        transform: none;
-    }
-
-    .game-card:hover .card-media img {
-        transform: none;
     }
 }
