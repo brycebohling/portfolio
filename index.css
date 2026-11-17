@@ -182,6 +182,11 @@ dd {
     color: var(--text);
 }
 
+.fact-detail {
+    margin: 0.25rem 0 0;
+    color: var(--muted);
+}
+
 .fact-sub {
     margin: 0.35rem 0 0;
     font-family: var(--mono);
